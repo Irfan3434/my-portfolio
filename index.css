@@ -357,7 +357,7 @@ body {
     flex-direction: column;
     width:90vw !important;
     height:90vh !important;
-  padding:5vh 5vw;
+    padding:5vh 5vw;
     background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("background3.png") center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -368,7 +368,6 @@ body {
     overflow-y:auto;
     display:none;
     justify-content: center;
-
 }
 
 ul {
@@ -416,7 +415,7 @@ ul {
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.25);
     box-shadow: 4px 2px 1px rgba(0, 0, 0, 0.7);
-
+    margin-bottom: 2.5em;
 }
 
 .content-section {
@@ -668,6 +667,7 @@ ul {
 
     #about_container section {
         padding: 1.5em;
+	margin-right: 0.4em;
     }
 
     #about_container {
