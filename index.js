@@ -75,3 +75,8 @@ setTimeout(function(){
 },1500);
 
 
+$(document).ready(function() {
+    $('.social1, .social2, .social3').on('click', function() {
+      $(this).addClass('button-clicked');
+    });
+  });
