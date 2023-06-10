@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Irfan Ishtiaq Porfolio</title>
+    <link rel="icon" type="image" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="loading" class="loading">
+        <div id="spinner" class="spinner"></div>
+    </div>
+    <div id="particles-js" class="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <nav id="mainnav">
+    <a id="about" href="javascript:void(0)" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
+    <a id="work" href="javascript:void(0)" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Projects</a>
+    <a id="contact" href="javascript:void(0)" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Contact</a>
+    </nav>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>IRFAN's PIXEL CRAFT</h1>
+        <table class="titletable">
+            <tr>
+              <td>Front End Developer</td>
+              <td>Shopify Theme Developer</td>
+              <td>AI Developer</td>
+            </tr>
+          </table>
+        <div id="menu">
+            <nav id="secondarynav">
+            <a href="javascript:void(0)" onclick="showabout()">About</a>
+            <a href="javascript:void(0)" onclick="showwork()">Projects</a>
+            <a href="javascript:void(0)" onclick="showcontact()">Contact</a>
+            </nav>
+        </div>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social1"
+                        href="https://www.linkedin.com/in/irfan-ishtiaq-46837b213" target="_blank"><i class="fab fa-linkedin"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social1"
+                        href="https://twitter.com/Irfanbajwa34" target="_blank"><i class="fab fa-twitter"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social2"
+                        href="https://instagram.com/dapperdwellings1?igshid=ZDc4ODBmNjlmNQ==" target="_blank"><i class="fab fa-instagram"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social3"
+                        href="https://github.com/Irfan3434" target="_blank"><i class="fab fa-github"></i></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div class="closebutton" onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <div class="title">
+        <h1>PROJECTS</h1>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href="https://www.dapperdwellings.ca" target="_blank">
+                        <img src="project1.png" alt="Image Description">
+                    </a>
+                    <h4 class="weblabel">Dapper Dwellings</h4>
+                    <p class="webdescription">An exquisitely developed and completely customizable website for the Shopify Marketplace.</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://themedevops.myshopify.com" target="_blank">
+                        <img src="project2.png" alt="Image Description">
+                    </a>
+                    <h4 class="weblabel">Rouge Radiance</h4>
+                    <p class="webdescription">A one-of-a-kind website that showcases elegance, uniqueness, and offers complete customization option.</p>
+                </div>
+            </div>
+
+            <!-- If you want navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- If you want pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If you want scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    <div id="about_container" class="container">
+        <div class="closebutton" onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <div id="nav-section">
+            <ul>
+                <li><a class="mainmenu"  href="#about-section">About Me</a></li>
+                <li><a class="mainmenu"  href="#skills-section">Skills</a></li>
+                <li><a class="mainmenu"  href="#education-section">Education</a></li>
+                <li><a class="mainmenu"  href="#experience-section">Experience</a></li>
+            </ul>
+        </div>
+        <section>
+            <div id="about-section" class="content-section">
+                <h2>About me</h2>
+                 <p>Front End Engineer with expertise in web development
+                 projects. Expert in modern development methods with a strong background in HTML, CSS,
+                 JavaScript, React, Python and Liquid Shopify.</p>
+            </div>
+            <div id="skills-section" class="content-section">
+                <h2>Skills</h2>
+                <p>Html, CSS, JavaScript, React, Python, Liquid Shopify, Canva, and Microsoft Office.</p>
+            </div>
+            <div id="education-section" class="content-section">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <h3>Master of Engineering Technology (Electrical and Electronics)</h3>
+                        <p>Universiti Kuala Lumpur, Malaysia <br/>(Feb 2019 - Jun 2021)</p>
+                    </li>
+                    <li>
+                        <h3>BSc Electrical Engineering</h3>
+                        <p>University of Engineering and Technology, Taxila, Pakistan <br/>(Nov 2010 - Aug 2014)</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="experience-section" class="content-section">
+                <h2>Experience</h2>
+                <dl>
+                    <dt>
+                        <h3>FRONTEND DEVELOPER</h3>
+                        <h4>INTERACTIVE Solutions (Jul 2021 - Mar 2023)</h4>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li>Technical involvement in designing and developing responsive design websites.</li>
+                            <li>Implemented responsive design principles.</li>
+                            <li>Improved visitor journey by improving navigation, UI/UX.</li>
+                            <li>Implemented front-end technologies, including React JS, JavaScript, HTML, CSS3, Bootstrap.</li>
+                            <li>Maintained the quality of the visuals and facilitation.</li>
+                            <li>Achieved proficiency in writing effective and scalable code.</li>
+                            <li>Developed and implemented analytical capabilities and applications.</li>
+                        </ul>
+                    </dd>
+                    <dt>
+                        <h3>Trainee Web-Designer</h3>
+                        <h4>WISDOM Information Technology (Feb 2018 - Jan 2019)</h4>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li>Understanding and familiarity with HTML and CSS.</li>
+                            <li>Converted designs visualized in Photoshop, Illustrator, Adobe XD etc. to compliant HTML/CSS.</li>
+                            <li>Did the website maintenance for existing clients and new ones.</li>
+                            <li>Implemented Responsive design principles.</li>
+                            <li>Executed tasks like designing of landing page, doing PSD to html conversion, taking them live on web server.</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+
+        </section>
+    </div>
+
+
+    <div id="contact_container" class="container">
+        <div class="closebutton" onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <section>
+            <h1>Contact me</h1>
+            <p>
+            <form action="#" method="POST" class="formcarry-form">
+                <input name="name" type="text" placeholder="name" required />
+                <input name="email" type="email" placeholder="email" required /><br>
+                <textarea name="message" placeholder="your message" required rows="3"></textarea><br>
+                <button class="btn_one">send</button>
+            </form>
+            </p>
+        </section>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+
+</html>
