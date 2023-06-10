@@ -668,13 +668,13 @@ ul {
     #about_container section {
         padding: 1.5em;
 	margin-right: 0.4em;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
     }
 
     #about_container {
         padding: 2vh 2vw;
         width: 97vw !important;
-        height: auto !important;
+        height: 97vh !important;
     }
 
     ul {
