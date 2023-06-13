@@ -9,7 +9,7 @@
 body {
     padding:0px;
     margin:0px;
-    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("background1.webp") center center;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/background1.webp") center center;
     background-size:cover;
     width:100vw;
     height:100vh;
@@ -264,7 +264,7 @@ body {
     width:90vw !important;
     height:90vh !important;
     padding:5vh 5vw;
-    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("background2.webp") center center;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/background2.webp") center center;
     background-size: cover;
     background-repeat: no-repeat;
     color:#fff;
@@ -363,7 +363,7 @@ body {
     width:90vw !important;
     height:90vh !important;
   padding:5vh 5vw;
-    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("background3.webp") center center;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/background3.webp") center center;
     background-size: cover;
     background-repeat: no-repeat;
     color:#fff;
@@ -471,6 +471,29 @@ ul {
     margin: 25px auto;
 }
 
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.image-gallery img {
+    width: 200px;  /* Adjust as needed */
+    height: auto;
+    margin: 1em;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+    box-shadow: 4px 4px 10px 0px  rgba(0,0,0,0.3);
+}
+
+
 
 #contact_container {
     display: flex;
@@ -478,7 +501,7 @@ ul {
     width:90vw !important;
     height:90vh !important;
   padding:5vh 5vw;
-    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("background4.webp") center center;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/background4.webp") center center;
     background-size: cover;
     background-repeat: no-repeat;
     color:#fff;
@@ -719,6 +742,10 @@ ul {
         margin: 15px auto;
     }
 
+    .image-gallery img {
+        width: 100%;
+        margin: 1em 0;
+    }
 
 
     #about {
