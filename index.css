@@ -672,12 +672,12 @@ ul {
 
     .social1, .social2, .social3  {
     color: #ffa602;
-    font-size: 20px;
+    font-size: 23px;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 29px;
+    height: 29px;
     transition: all 0.3s ease;
-    padding: 15px;
+    padding: 14px;
     background-color: rgba(255,255,255,0.4);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     margin: 0px 8px;
