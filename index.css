@@ -213,17 +213,18 @@ body {
 
 .social1, .social2, .social3  {
     color: #ffa602;
-    font-size: 22px;
-    transition: all 0.3s ease;
+    font-size: 25px;
     border-radius: 50%;
-    padding: 15px;
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease;
+    padding: 17px;
     background-color: rgba(255,255,255,0.4);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     margin: 0px 8px;
     text-align: center;
     display: inline-block;
     text-decoration: none;
-
 }
 
 .social1:hover {
@@ -668,6 +669,22 @@ ul {
         font-size: larger;
         cursor: pointer;
     }
+
+    .social1, .social2, .social3  {
+    color: #ffa602;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    margin: 0px 8px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
 
 
     .weblabel {
