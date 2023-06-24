@@ -479,13 +479,22 @@ ul {
     padding: 1em;
 }
 
+.image-gallery .gallery-item {
+	background: #ffa60257;
+	border-radius: 16px;
+}
+
 .image-gallery img {
-    width: 200px;  /* Adjust as needed */
+    width: 210px;
     height: auto;
     margin: 1em;
     border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
+    border-radius: 7px;
+    display: block;
+    object-fit: contain;
+    background: #fff;
 }
 
 .image-gallery img:hover {
