@@ -65,52 +65,45 @@
             </tr>
         </table>
     </div>
-    <div id="work_container" class="container">
+    <section id="work_container">
         <div class="closebutton" onclick="closework()"><i class="fas fa-angle-right"></i></div>
-        <div class="title">
-        <h1>PROJECTS</h1>
-        </div>
-
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <a href="https://www.fcec.sa/" target="_blank">
-                        <img src="project1.webp" alt="Meta Gadgetry">
-                    </a>
-                    <h4 class="weblabel">FCEC</h4>
-                    <p class="webdescription">A corporate website meticulously developed using advanced and contemporary techniques.</p>
+        <h1>My Work</h1>
+        <div class="work-grid">
+            <div class="work-card" data-project-id="1">
+                <img src="project1.webp" alt="FCEC">
+                <div class="card-content">
+                    <h4>FCEC</h4>
+                    <p>A corporate website developed with advanced techniques.</p>
                 </div>
-                <div class="swiper-slide">
-                    <a href="https://themedevops.myshopify.com" target="_blank">
-                        <img src="project2.webp" alt="Image Description">
-                    </a>
-                    <h4 class="weblabel">Nexa Sphere</h4>
-                    <p class="webdescription">A meticulously crafted website to enable businesses thrive in the competitive e-commerce landscape.<br/></p>
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://irfan3434.github.io/Greetings_page/" target="_blank">
-                        <img src="project3.webp" alt="Image Description">
-                    </a>
-                    <h4 class="weblabel">Greetings Page</h4>
-                    <p class="webdescription">A webapp, orchestrated with delicacy for the celebration of a particular occasion.</p>
-                </div>
-                
             </div>
-
-            <!-- If you want navigation buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
-            <!-- If you want pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If you want scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <div class="work-card" data-project-id="2">
+                <img src="fceco.webp" alt="FC ECO">
+                <div class="card-content">
+                    <h4>FC ECO</h4>
+                    <p>A bilingual website focusing on seamless navigation.</p>
+                </div>
+            </div>
+            <div class="work-card" data-project-id="3">
+                <img src="ayed.webp" alt="Ayed Al Qarni Excellence">
+                <div class="card-content">
+                    <h4>Ayed Al Qarni Excellence Awards</h4>
+                    <p>Responsive bilingual website for enhanced user engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal for Project Details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+            <h2 id="modal-title">Project Title</h2>
+            <p id="modal-description">Project Description</p>
+            <a id="modal-link" href="#" target="_blank" class="btn_one">Visit Project</a>
         </div>
     </div>
+    
+    
     <div id="about_container" class="container">
         <div class="closebutton" onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
         <div id="nav-section">
