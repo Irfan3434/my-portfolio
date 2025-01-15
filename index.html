@@ -230,25 +230,27 @@
 
 
     <div id="contact_container" class="container">
-        <div class="closebutton" onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <div class="closebutton" onclick="closecontact()">
+            <i class="fas fa-angle-down"></i>
+        </div>
         <section>
-            <h1>Reach out to me:</h1>
-            <p style="font-size: large;">
-             Email: irfanbajwa34@gmail.com <br/>
-             <br/>
-             Phone: +923354966511
-             <br/>
-             <br/> 
-             Feel free to share your viewpoints: <br/>
-            <form action="#" method="POST" class="formcarry-form">
-                <input name="name" type="text" placeholder="Enter Your Name" required />
-                <input name="email" type="email" placeholder="Enter Your Email" required /><br>
-                <textarea name="message" placeholder="Your Message" required rows="3"></textarea><br>
-                <button class="btn_one">send</button>
-            </form>
+            <h1>Contact Me</h1>
+            <p class="contact-info">
+                <span>Email:</span> irfanbajwa34@gmail.com <br />
+                <span>Phone:</span> +966546590644 <br />
             </p>
+            <p class="contact-message">Feel free to reach out with your message below:</p>
+            <form action="#" method="POST" class="formcarry-form">
+                <div class="form-group">
+                    <input name="name" type="text" placeholder="Your Name" required />
+                    <input name="email" type="email" placeholder="Your Email" required />
+                </div>
+                <textarea name="message" placeholder="Write your message here..." required></textarea>
+                <button class="btn_submit">Send Message</button>
+            </form>
         </section>
     </div>
+    
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
