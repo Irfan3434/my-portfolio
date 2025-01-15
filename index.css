@@ -993,7 +993,8 @@ section {
 
 .formcarry-form input,
 .formcarry-form textarea {
-    width: 100%;
+    width: 100%; /* Full width within the parent container */
+    max-width: 600px; /* Limit the width for larger screens */
     padding: 15px;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.2);
@@ -1062,6 +1063,7 @@ textarea {
         height: 100vh;
         padding: 4vh 3vw;
         border-radius: 0;
+        box-sizing: border-box;
     }
 
     section {
@@ -1074,7 +1076,8 @@ textarea {
     }
 
     .formcarry-form {
-        gap: 0.8rem;
+        gap: 1.8rem;
+        box-sizing: border-box;
     }
 
     .form-group {
@@ -1084,8 +1087,10 @@ textarea {
 
     .formcarry-form input,
     .formcarry-form textarea {
-        padding: 12px;
-        font-size: 0.9rem;
+        width: 100%; /* Full width for mobile view */
+        max-width: none; /* Remove max-width constraints */
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Slightly smaller font size for readability */
     }
 
     textarea {
