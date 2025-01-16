@@ -16,6 +16,7 @@ function closeabout(){
 
 
 function showwork(){
+    $("#work_container").css("display","flex");
     $("#work_container").addClass("animated slideInRight");
 
     setTimeout(function(){
@@ -82,7 +83,8 @@ $(document).ready(function() {
 
 
 
-  const projects = [
+// Data for the projects (can be loaded from an API or JSON)
+const projects = [
     {
         id: 1,
         title: "FCEC",
@@ -120,7 +122,7 @@ function openProjectModal(project) {
     modal.querySelector('#modal-title').innerText = project.title;
     modal.querySelector('#modal-description').innerText = project.description;
     modal.querySelector('#modal-link').href = project.link;
-    modal.style.display = 'flex'; // Make the modal visible
+    modal.style.display = 'flex';
 }
 
 // Close the modal
