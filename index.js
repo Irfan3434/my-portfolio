@@ -33,7 +33,7 @@ function closework(){
 }
 
 function showcontact(){
-    $("#contact_container").css("display","inherit");
+    $("#contact_container").css("display","flex");
     $("#contact_container").addClass("animated slideInUp");
     setTimeout(function(){
         $("#contact_container").removeClass("animated slideInUp");
