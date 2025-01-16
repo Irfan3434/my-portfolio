@@ -1247,16 +1247,19 @@ textarea {
         text-align:center;
     }
     #middle {
-        width:90vw;
+        width:100vw;
         height: 100vh;
         padding:0px 5vw;
+        box-sizing: border-box;
     }
     #middle table {
-        width:94%;
+        width:100%;
+        margin: 3vh auto;
     }
     #menu {
         display:inline-block;
-        margin: 3vh 0px;
+        width: 100%;
+        margin: 3vh auto;
     }
 
 
