@@ -533,15 +533,18 @@ body {
 
 .work-grid {
     display: flex;
-    gap: 2em;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    gap: 2em; /* Space between items */
     padding: 1em;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     box-sizing: border-box;
+    justify-content: center; /* Center items horizontally */
 }
 
 .work-card {
+    flex: 0 0 calc(50% - 2em); /* Ensure each card takes up half the available width, minus the gap */
     background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     overflow: hidden;
@@ -550,8 +553,8 @@ body {
     position: relative;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    max-width: 650px;
-    margin: 0 auto;
+    max-width: 600px; /* Optional: cap the maximum card width */
+    box-sizing: border-box;
 }
 
 .work-card:hover {
