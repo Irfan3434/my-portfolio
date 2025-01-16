@@ -16,7 +16,6 @@ function closeabout(){
 
 
 function showwork(){
-    $("#work_container").css("display","flex");
     $("#work_container").addClass("animated slideInRight");
 
     setTimeout(function(){

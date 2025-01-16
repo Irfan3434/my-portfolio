@@ -596,9 +596,9 @@ body {
 
 @media screen and (max-width: 768px) {
     #work_container {
-        display: flex;
-    width: 100vw !important;
-    height: 100vh !important;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
     padding: 3vh 3vw;
     }
     
@@ -608,14 +608,14 @@ body {
     }
     
     .work-grid {
-        grid-template-columns: 1fr !important;
         gap: 1.5em;
         padding: 0.5em;
         box-sizing: border-box;
     }
     
     .work-card {
-        max-width: 400px;
+        width: 100%;
+        min-width: 400px;
         margin: 0 auto;
     }
 
