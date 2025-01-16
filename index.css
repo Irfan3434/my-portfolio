@@ -906,18 +906,38 @@ body {
 .formcarry-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    margin: 0px auto;
 }
 
 .form-group {
     display: flex;
     gap: 1rem;
+    box-sizing: border-box;
+    flex-direction: row;
+    width: 100%;
 }
 
 .formcarry-form input,
 .formcarry-form textarea {
     width: 100%;
     padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+.formcarry-form textarea {
+    width: 100%;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
