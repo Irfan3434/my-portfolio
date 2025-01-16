@@ -122,7 +122,6 @@ function openProjectModal(project) {
     modal.querySelector('#modal-title').innerText = project.title;
     modal.querySelector('#modal-description').innerText = project.description;
     modal.querySelector('#modal-link').href = project.link;
-    modal.style.display = 'flex';
 }
 
 // Close the modal
